@@ -24,3 +24,12 @@
   margin: auto;
   width: fit-content;
 }
+
+.selected {
+  background-color: black;
+  /*  */
+}
+
+#clear-board {
+  border-radius: 20px;
+}
