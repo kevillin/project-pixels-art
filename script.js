@@ -30,8 +30,13 @@ box3.addEventListener('click', confereUnicaSelect);
 box4.addEventListener('click', confereUnicaSelect);
 
 // Requisito 8
-
-
+window.onload = function() {
+  for(let i = 0; i < pixel.length; i += 1){
+    pixel[i].addEventListener('click', confereClick1 = (event) => {
+    pixel[i].classList.add('selected')
+    })
+  }
+}
 
 for(let i = 0; i < color.length; i += 1){
   color[i].addEventListener('click', pegaClick = (event) => {
@@ -39,7 +44,6 @@ for(let i = 0; i < color.length; i += 1){
     for(let i = 0; i < pixel.length; i += 1){
       pixel[i].addEventListener('click', confereClick = (event) => {
       pixel[i].classList.remove('selected')
-      // event.target.classList.add('selected');
       event.target.style.backgroundColor = corDaCaixa;
       })
     }
